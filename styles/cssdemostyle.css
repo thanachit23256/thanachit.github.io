@@ -1,0 +1,38 @@
+#heading1 {
+    color: red;
+}
+#heading2 {
+    color: green;
+    text-align: right;
+}
+#heading3 {
+    color: blue;
+    text-align: center;
+}
+
+.pleft {
+    color: darkturquoise;
+    text-align: left;
+    font-style: italic;
+    border-width: 2px;
+    border-style: solid;
+    border-color: royalblue;
+}
+
+.pcenter {
+    color: darkolivegreen;
+    text-align: center;
+    font-weight: bold;
+    border-width: 3px;
+    border-style: dotted;
+    border-color: coral;
+}
+
+#pright {
+    color: darkmagenta;
+    text-align: right;
+    font-size: large;
+    border-width: 4px;
+    border-style: dashed;
+    border-color: yellow;
+}
