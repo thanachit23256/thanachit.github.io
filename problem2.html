@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="lib/problem2.js"></script>
+    <title>Document</title>
+    <style>
+        .h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 class="h2">Statistics Calculator!</h2>
+    <h1>Write the web app to prompt accepting for positive integers until the user enters a negative integer</h1>
+    <div>
+        <ul>
+            <li>If the entered text is not a positive integer number, then the web app will keep asking for a number
+                until the valid positive integer is entered</li>
+            <li>If the entered text is a negative integer, then the web app will show the statistics (average, min, max)
+                of all entered positive integers</li>
+            <li>If the user enters a negative integer as the first integer, the average, the min, and the max is 0</li>
+        </ul>
+    </div>
+    <div>
+        <h1>Hint:</h1>
+        <ol>
+            <li>Implement these two functions
+                <ul>list = readInput();</ul>
+                <ul>displayStats(list);</ul>
+            </li>
+            <li>Use ternary operator (conditional operator ?) to handle in both cases which the list is empty and is not
+                empty</li>
+            <li>You need to implement functions to check whether an entered text is a positive integer or not and
+                whether an entered text is a negative integer or not</li>
+            <li>You need to implement funtions to compute average, min and max of a list of integers</li>
+        </ol>
+    </div>
+
+    <script>
+        let input
+        let list = []
+        let avrg = 0;
+        let sum = 0;
+        let max, min, count = 0;
+        while (true) {
+            input = prompt("Enter an integer (a negative integer to quit: )");
+            if (isNaN(input)) {
+                continue;
+            }
+            else {
+                (input >= 0) ? readInput() : displayStats(list);
+            }
+            if (count == 1) {
+                break;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
